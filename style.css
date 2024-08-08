@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+}
+
+main {
+    background-color: grey; 
+    padding-top: 5%;
+    padding-bottom: 20%;
+
+}
+
+.calculatorCase {
+    background: linear-gradient(#2f2f2f, #2f2f2f);
+    filter: drop-shadow(1rem 1rem 30px);
+    width: 50%;
+    margin: 20px auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border-radius: 15px;
+    ;
+}
+
+.display {
+    background-color: #F1FFCC;
+    width: 50%;
+    height: 5%;
+    font-size: 3em;
+    box-shadow: inset 0.1em 0.1em #c0d38e;
+}
+
+.buttons {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0.4rem;
+}
+
+.buttons button {
+    font-size: 3em;
+    border-radius: 20px;
+    background: #2f2f2f;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1.5;
+	border-radius: 4px;
+	color: #c4c4c4;
+	box-shadow:
+		1px 1px 5px #000,
+		-1px -1px 5px #6f6f6f,
+		inset 1px 1px 5px #2b2b2b,
+		inset -1px -1px 5px #424242;
+	transition: all 0.1s;
+
+
+}
+
+.buttons button:active {
+	box-shadow:
+		1px 1px 5px #5b5b5b,
+		-1px -1px 5px #000,
+		inset 1px 1px 5px #5b5b5b,
+		inset -1px -1px 5px #000;
+}
+
+.button1, .button2, .button3 {
+    grid-row-start: 4;
+}
+
+.buttons .result {
+    grid-column: 4/5;
+    grid-row: 4/6;
+    background-color: #1b2d31;
+    box-shadow:
+	2px 2px 8px #0f1a1c, /* Darker outer shadow */
+	-2px -2px 8px #2a454a, /* Lighter outer shadow on the opposite side */
+	inset 1px 1px 4px #142326, /* Slightly darker inner shadow */
+	inset -1px -1px 4px #223a3f; /* Lighter inner shadow to add depth */
+}
+
+.button4, .button5, .button6 {
+    grid-row-start: 3
+}
+
+.button7, .button8, .button9 {
+    grid-row-start: 2
+}
+
+
+.buttons .restart {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    background: #9e472a;
+    color: white;
+    box-shadow:
+	2px 2px 8px #803824, /* Darker outer shadow */
+	-2px -2px 8px #b6583a, /* Lighter outer shadow on the opposite side */
+	inset 1px 1px 4px #873d26, /* Slightly darker inner shadow */
+	inset -1px -1px 4px #b25933; /* Lighter inner shadow to add depth */
+}
+
+.plus {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-row: 2/4;
+}
+
+.button0 {
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column: 1/4;
+}
+
+.divide {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.mul {
+    grid-column-start: 3;
+}
+
+.take {
+    grid-column-start: 4;
+}
+
+
+
+
