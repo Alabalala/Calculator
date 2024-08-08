@@ -130,6 +130,25 @@ main {
     grid-column-start: 4;
 }
 
+@media screen and (max-width: 450px) {
+.calculatorCase {
+    width: 90%;
+    padding: 5%;
+}
+
+.display {
+    width: 80%;
+}
+.buttons {
+    width: 80%;
+
+}
+
+.buttons button {
+    font-size: 0,1em;
+
+}
 
 
+  }
 
