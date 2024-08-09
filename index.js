@@ -71,9 +71,13 @@ function calculate(e) {
             break;
 
         case '=':
-            resultNumber()
+            resultNumber();
 
+        case '.':
+            addDecimal();
         }
+
+
 }
 
 function resultNumber() {
@@ -86,7 +90,6 @@ function resultNumber() {
             console.log(currentNumber);
             display.innerHTML = currentNumber;
             count = currentNumber;
-            currentNumber = "0";
             plus = false;
             break;
 
@@ -98,7 +101,6 @@ function resultNumber() {
             console.log(currentNumber);
             display.innerHTML = currentNumber;
             count = currentNumber;
-            currentNumber = "0";
             take = false;
             break;
 
@@ -110,7 +112,6 @@ function resultNumber() {
             console.log(currentNumber);
             display.innerHTML = currentNumber;
             count = currentNumber;
-            currentNumber = "0";
             multiply = false;
             break;
         
@@ -122,7 +123,6 @@ function resultNumber() {
             console.log(currentNumber);
             display.innerHTML = currentNumber;
             count = currentNumber;
-            currentNumber = "0";
             divide = false;
             break;
 
@@ -210,3 +210,16 @@ function addNumbers() {
     }
 }
 
+function addDecimal() {
+    if (currentNumber.includes(".") ) {
+        return;
+    } else {
+        if (currentNumber === "") {
+            currentNumber += `0.`;
+            display.innerHTML = currentNumber;
+        } else {
+            currentNumber += `.`;
+            display.innerHTML = currentNumber;
+        }
+    }
+}
